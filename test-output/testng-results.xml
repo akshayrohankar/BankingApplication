@@ -2,20 +2,20 @@
 <testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="120447" started-at="2020-02-21T11:48:50Z" finished-at="2020-02-21T11:50:50Z">
+  <suite name="Default suite" duration-ms="37897" started-at="2020-02-21T12:19:38Z" finished-at="2020-02-21T12:20:16Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="120447" started-at="2020-02-21T11:48:50Z" finished-at="2020-02-21T11:50:50Z">
+    <test name="Default test" duration-ms="37897" started-at="2020-02-21T12:19:38Z" finished-at="2020-02-21T12:20:16Z">
       <class name="testcases.ParametererizedDataLoginPageTest">
-        <test-method status="PASS" signature="initMe()[pri:0, instance:testcases.ParametererizedDataLoginPageTest@66a3ffec]" name="initMe" is-config="true" duration-ms="64738" started-at="2020-02-21T11:48:50Z" finished-at="2020-02-21T11:49:55Z">
+        <test-method status="PASS" signature="initMe()[pri:0, instance:testcases.ParametererizedDataLoginPageTest@66a3ffec]" name="initMe" is-config="true" duration-ms="13771" started-at="2020-02-21T12:19:38Z" finished-at="2020-02-21T12:19:52Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- initMe -->
-        <test-method status="PASS" signature="testLoginPage()[pri:1, instance:testcases.ParametererizedDataLoginPageTest@66a3ffec]" name="testLoginPage" duration-ms="54943" started-at="2020-02-21T11:49:55Z" finished-at="2020-02-21T11:50:50Z">
+        <test-method status="PASS" signature="testLoginPage()[pri:1, instance:testcases.ParametererizedDataLoginPageTest@66a3ffec]" name="testLoginPage" duration-ms="23322" started-at="2020-02-21T12:19:52Z" finished-at="2020-02-21T12:20:15Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testLoginPage -->
-        <test-method status="PASS" signature="closeMe()[pri:0, instance:testcases.ParametererizedDataLoginPageTest@66a3ffec]" name="closeMe" is-config="true" duration-ms="732" started-at="2020-02-21T11:50:50Z" finished-at="2020-02-21T11:50:50Z">
+        <test-method status="PASS" signature="closeMe()[pri:0, instance:testcases.ParametererizedDataLoginPageTest@66a3ffec]" name="closeMe" is-config="true" duration-ms="746" started-at="2020-02-21T12:20:15Z" finished-at="2020-02-21T12:20:16Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- closeMe -->

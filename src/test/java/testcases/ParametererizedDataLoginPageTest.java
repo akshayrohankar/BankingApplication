@@ -3,10 +3,6 @@ package testcases;
 import java.io.IOException;
 
 import org.openqa.selenium.Alert;
-import org.openqa.selenium.support.ui.ExpectedCondition;
-import org.openqa.selenium.support.ui.ExpectedConditions;
-import org.openqa.selenium.support.ui.Select;
-import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
@@ -29,7 +25,7 @@ public class ParametererizedDataLoginPageTest extends base {
 
 		LoginPage objLoginPage = new LoginPage(driver);
 		
-		Xls_Reader reader = new Xls_Reader("E:\\Eclipse Workspace\\Guru99_BankingApplication\\Guru99.BankingApplication\\TestData\\testData.xlsx");
+		Xls_Reader reader = new Xls_Reader(prop.getProperty("testDataExcelSheetPath"));
 
 		int countRow = reader.getRowCount("Banking");
 
