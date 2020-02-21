@@ -37,7 +37,6 @@ public class HomePageTest extends base {
 
 		HomePage homepage = new HomePage(driver);
 		homepage.verifyManagerId();
-	   
 	}
 
 	@AfterTest

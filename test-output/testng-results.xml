@@ -1,29 +1,85 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" ignored="0" total="2" passed="2">
+<testng-results skipped="0" failed="0" ignored="1" total="5" passed="4">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="17007" started-at="2020-02-21T14:38:03Z" finished-at="2020-02-21T14:38:20Z">
+  <suite name="Default suite" duration-ms="32337" started-at="2020-02-21T16:07:29Z" finished-at="2020-02-21T16:08:01Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="17007" started-at="2020-02-21T14:38:03Z" finished-at="2020-02-21T14:38:20Z">
-      <class name="testcases.HomePageTest">
-        <test-method status="PASS" signature="initMe()[pri:0, instance:testcases.HomePageTest@66a3ffec]" name="initMe" is-config="true" duration-ms="14056" started-at="2020-02-21T14:38:03Z" finished-at="2020-02-21T14:38:17Z">
+    <test name="Default test" duration-ms="32337" started-at="2020-02-21T16:07:29Z" finished-at="2020-02-21T16:08:01Z">
+      <class name="testcases.DataProviderLoginPageTest2">
+        <test-method status="PASS" signature="initMe()[pri:0, instance:testcases.DataProviderLoginPageTest2@1e88b3c]" name="initMe" is-config="true" duration-ms="13128" started-at="2020-02-21T16:07:29Z" finished-at="2020-02-21T16:07:42Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- initMe -->
-        <test-method status="PASS" signature="testLoginPage()[pri:1, instance:testcases.HomePageTest@66a3ffec]" name="testLoginPage" duration-ms="2069" started-at="2020-02-21T14:38:17Z" finished-at="2020-02-21T14:38:19Z">
+        <test-method status="PASS" signature="testLoginPage(java.lang.String, java.lang.String)[pri:1, instance:testcases.DataProviderLoginPageTest2@1e88b3c]" name="testLoginPage" duration-ms="12649" started-at="2020-02-21T16:07:42Z" data-provider="LoginData" finished-at="2020-02-21T16:07:55Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[mngr247076]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[seqUqaq]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testLoginPage -->
-        <test-method status="PASS" signature="verifyLoginId()[pri:2, instance:testcases.HomePageTest@66a3ffec]" name="verifyLoginId" duration-ms="104" started-at="2020-02-21T14:38:19Z" finished-at="2020-02-21T14:38:19Z">
+        <test-method status="PASS" signature="testLoginPage(java.lang.String, java.lang.String)[pri:1, instance:testcases.DataProviderLoginPageTest2@1e88b3c]" name="testLoginPage" duration-ms="820" started-at="2020-02-21T16:07:55Z" data-provider="LoginData" finished-at="2020-02-21T16:07:55Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[mngr247077]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[seqUqaq]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- verifyLoginId -->
-        <test-method status="PASS" signature="closeMe()[pri:0, instance:testcases.HomePageTest@66a3ffec]" name="closeMe" is-config="true" duration-ms="736" started-at="2020-02-21T14:38:19Z" finished-at="2020-02-21T14:38:20Z">
+        </test-method> <!-- testLoginPage -->
+        <test-method status="PASS" signature="testLoginPage(java.lang.String, java.lang.String)[pri:1, instance:testcases.DataProviderLoginPageTest2@1e88b3c]" name="testLoginPage" duration-ms="2510" started-at="2020-02-21T16:07:55Z" data-provider="LoginData" finished-at="2020-02-21T16:07:58Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[mngr247076]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[seqUqar]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testLoginPage -->
+        <test-method status="PASS" signature="testLoginPage(java.lang.String, java.lang.String)[pri:1, instance:testcases.DataProviderLoginPageTest2@1e88b3c]" name="testLoginPage" duration-ms="2470" started-at="2020-02-21T16:07:58Z" data-provider="LoginData" finished-at="2020-02-21T16:08:00Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[mngr247079]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[seqUqar]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testLoginPage -->
+        <test-method status="PASS" signature="closeMe()[pri:0, instance:testcases.DataProviderLoginPageTest2@1e88b3c]" name="closeMe" is-config="true" duration-ms="680" started-at="2020-02-21T16:08:00Z" finished-at="2020-02-21T16:08:01Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- closeMe -->
-      </class> <!-- testcases.HomePageTest -->
+      </class> <!-- testcases.DataProviderLoginPageTest2 -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>
