@@ -40,8 +40,7 @@ public class ParametererizedDataLoginPageTest extends base {
 			objLoginPage.getLoginbtn().click();
 			
 			
-			WebDriverWait wait = new WebDriverWait(driver, 0);
-			if(wait.until(ExpectedConditions.alertIsPresent()) != null) {
+			if(objLoginPage.isAlertPresent()) {
 				Alert alert = driver.switchTo().alert();
 				alert.accept();
 			}else {

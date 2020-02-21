@@ -1,12 +1,12 @@
 package pageObjects;
 
-import java.util.NoSuchElementException;
-
 import org.openqa.selenium.By;
+import org.openqa.selenium.TimeoutException;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.WebDriverWait;
 
-import resources.Xls_Reader;
 import resources.base;
 
 public class LoginPage extends base {
@@ -41,6 +41,17 @@ public class LoginPage extends base {
 		getLoginbtn().click();
 	}
 	
+	public boolean isAlertPresent(){
+	    boolean foundAlert = false;
+	    WebDriverWait wait = new WebDriverWait(driver, 0 /*timeout in seconds*/);
+	    try {
+	        wait.until(ExpectedConditions.alertIsPresent());
+	        foundAlert = true;
+	    } catch (TimeoutException eTO) {
+	        foundAlert = false;
+	    }
+	    return foundAlert;
+	}
 
 	public void ValidateSuccessfullLogin() {
 		System.out.println(driver.getTitle());
