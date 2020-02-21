@@ -40,31 +40,27 @@ public class LoginPage extends base {
 		getPassword().sendKeys(prop.getProperty("password"));
 		getLoginbtn().click();
 	}
-	
-	public boolean isAlertPresent(){
-	    boolean foundAlert = false;
-	    WebDriverWait wait = new WebDriverWait(driver, 0 /*timeout in seconds*/);
-	    try {
-	        wait.until(ExpectedConditions.alertIsPresent());
-	        foundAlert = true;
-	    } catch (TimeoutException eTO) {
-	        foundAlert = false;
-	    }
-	    return foundAlert;
+
+	public boolean isAlertPresent() {
+		boolean foundAlert = false;
+		WebDriverWait wait = new WebDriverWait(driver, 0 /* timeout in seconds */);
+		try {
+			wait.until(ExpectedConditions.alertIsPresent());
+			foundAlert = true;
+		} catch (TimeoutException eTO) {
+			foundAlert = false;
+		}
+		return foundAlert;
 	}
 
-	public void ValidateSuccessfullLogin() {
-		System.out.println(driver.getTitle());
+	public boolean isSuccessfullLogin() {
+		String expectedTitle = "Guru99 Bank Manager HomePage";
 		String actualPageTitle = driver.getTitle();
 		System.out.println(actualPageTitle);
-		if(prop.getProperty("LoginPageTitle") == actualPageTitle) {
-			System.out.println("Page Title Matches !!!");
-		}else {
-			System.out.println("DONOT MATCH WITH EXPECTED TITLE");
-		}
-	
-		
+		if (expectedTitle.equalsIgnoreCase(actualPageTitle)) {
+			return true;
+		} else
+			return false;
 	}
-
 
 }

@@ -1,15 +1,18 @@
 package testcases;
 
 import java.io.IOException;
+import java.util.regex.Matcher;
+import java.util.regex.Pattern;
 
 import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
 
+import pageObjects.HomePage;
 import pageObjects.LoginPage;
 import resources.base;
 
-public class LoginPageTest extends base {
+public class HomePageTest extends base {
 	
 	 
 
@@ -29,6 +32,13 @@ public class LoginPageTest extends base {
 			System.out.println("Invalid Credentils !!");
 	}
 	
+	@Test(priority = 2)
+	public void verifyLoginId() throws InterruptedException {
+
+		HomePage homepage = new HomePage(driver);
+		homepage.verifyManagerId();
+	   
+	}
 
 	@AfterTest
 	public void closeMe() throws IOException {
