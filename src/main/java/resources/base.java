@@ -17,49 +17,36 @@ public class base {
 
 	public static WebDriver driver;
 	public static Properties prop;
-public WebDriver initializeDriver() throws IOException
-{
-	
- prop= new Properties();
-FileInputStream fis=new FileInputStream("E:\\Eclipse Workspace\\Guru99_BankingApplication\\Guru99.BankingApplication\\src\\main\\java\\resources\\data.properties");
 
-prop.load(fis);
-String browserName=prop.getProperty("browser");
-System.out.println(browserName);
+	public WebDriver initializeDriver() throws IOException {
 
-if(browserName.equals("chrome"))
-{
-	 System.setProperty("webdriver.chrome.driver", "E:\\Eclipse Workspace\\Guru99_BankingApplication\\Guru99.BankingApplication\\src\\main\\java\\resources\\chromedriver.exe");
-	driver= new ChromeDriver();
-		//execute in chrome driver
+		prop = new Properties();
+		FileInputStream fis = new FileInputStream(
+				"E:\\Eclipse Workspace\\Guru99_BankingApplication\\Guru99.BankingApplication\\src\\main\\java\\resources\\data.properties");
 
+		prop.load(fis);
+		String browserName = prop.getProperty("browser");
+		System.out.println(browserName);
 
-}
-else if (browserName.equals("firefox"))
-{
-	 driver= new FirefoxDriver();
-	//firefox code
-}
-else if (browserName.equals("IE"))
-{
+		if (browserName.equals("chrome")) {
+			System.setProperty("webdriver.chrome.driver",
+					"E:\\Eclipse Workspace\\Guru99_BankingApplication\\Guru99.BankingApplication\\src\\main\\java\\resources\\chromedriver.exe");
+			driver = new ChromeDriver();
+			// execute in chrome driver
+
+		} else if (browserName.equals("firefox")) {
+			driver = new FirefoxDriver();
+			// firefox code
+		} else if (browserName.equals("IE")) {
 //	IE code
-}
+		}
 
-driver.get(prop.getProperty("url"));
-driver.manage().window().maximize();
+		driver.get(prop.getProperty("url"));
+		driver.manage().window().maximize();
 
-driver.manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);
-return driver;
+		driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
+		return driver;
 
-
-}
-
-public void getScreenshot(String result) throws IOException
-{
-	File src=((TakesScreenshot)driver).getScreenshotAs(OutputType.FILE);
-	FileUtils.copyFile(src, new File("E:\\Eclipse Workspace\\Guru99_BankingApplication\\Guru99.BankingApplication\\TestData\\Screenshots"+result+"screenshot.png"));
-	
-}
-
+	}
 
 }

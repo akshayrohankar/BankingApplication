@@ -31,7 +31,7 @@ public class DataProviderLoginPageTest2 extends base {
 		objLoginPage.getUsername().sendKeys(username);
 		objLoginPage.getPassword().sendKeys(password);
 		objLoginPage.getLoginbtn().click();
-		
+
 		if (objLoginPage.isAlertPresent()) {
 			Alert alert = driver.switchTo().alert();
 			alert.accept();
@@ -47,16 +47,13 @@ public class DataProviderLoginPageTest2 extends base {
 
 	}
 
-	
-	@Test(enabled=false)
+	@Test(enabled = false)
 	public void verifyLoginId() throws InterruptedException {
 
 		HomePage homepage = new HomePage(driver);
 		homepage.verifyManagerId();
 	}
 	// td[contains(text(),'Manger Id : mngr247076')]
-	
-	
 
 	@DataProvider(name = "LoginData")
 	public Object[][] getDataFromDataprovider() {

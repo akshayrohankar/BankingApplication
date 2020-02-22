@@ -58,9 +58,13 @@ public class LoginPage extends base {
 		String actualPageTitle = driver.getTitle();
 		System.out.println(actualPageTitle);
 		if (expectedTitle.equalsIgnoreCase(actualPageTitle)) {
+			System.out.println("Successfull Login !!");
 			return true;
-		} else
+		} else {
+			System.out.println("INVALID Login !!");
 			return false;
+		}
+			
 	}
 
 }
